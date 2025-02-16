@@ -23,6 +23,11 @@ a {
   --color-3b4149: #3b4149;
   --color-febd69: #febd69;
   --color-232f3e: #232f3e;
+  --color-bf4800: #bf4800;
+}
+
+.gap-5{
+  gap: 5px;
 }
 
 .gap-10{
@@ -35,6 +40,19 @@ a {
 
 .gap-30{
   gap: 30px;
+}
+
+.button{
+  background-color: var(--color-232f3e);
+  color: white;
+  padding: 13px 33px;
+  font-size: 14px;
+  border-radius: 35px;
+}
+
+.button:hover{
+  background-color: var(--color-febd69);
+  color: black;
 }
 
 /* Header Part */
@@ -111,3 +129,73 @@ footer .input-group-text{
   padding: 8px 17px;
 }
 /* End Footer Section */
+
+
+/* Home Page */
+
+.main-banner-content{
+  top: 15%;
+  left: 5%;
+}
+
+.main-banner-content h4{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-bf4800);
+  margin: 0 0 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.main-banner-content h5{
+  font-size: 42px;
+  line-height: 54px;
+  letter-spacing: -2px;
+  font-weight: 500;
+  padding: 0;
+  text-transform: none;
+}
+
+.main-banner-content p{
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: .4px;
+  color: var(--color-131921);
+}
+
+.small-banner-content{
+  top: 25%;
+  left: 10%;
+}
+
+.small-banner-content h4{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-bf4800);
+  margin: 0 0 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.small-banner-content h5{
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: -2px;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.small-banner-content p{
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: .4px;
+  color: var(--color-131921);
+}
+
+.small-banner{
+  width: 49%;
+}
+
+/* End Home Page */
