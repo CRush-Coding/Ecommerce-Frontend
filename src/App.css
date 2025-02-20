@@ -371,6 +371,10 @@ footer .input-group-text{
   border: 1px solid black;
 }
 
+.inliner{
+  display: inline;
+}
+
 /* End Special Product */
 
 /* End Home Page */
