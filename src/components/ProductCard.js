@@ -39,9 +39,9 @@ const ProductCard = () => {
                                 />
                         
                             
-                            </>
+                                </>
+                            )}
                         )}
-                    )}
                     <p>({rating} Stars)</p>
                     </div>
                     <p className="price">$100.00</p>

@@ -75,13 +75,13 @@ const Header = () => {
             <div className="col-12">
                 <div className="menu-bottom d-flex align-items-center gap-30">
                     <div>
-                    <div class="dropdown">
+                    <div className="dropdown">
                         <button className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center" 
                         type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src='images/images/menu.svg' alt="menu"/>
                             <span className='me-5 d-inline-blocLink'>Shop Categories</span>
                         </button>
-                        <ul class="dropdown-menu">
+                        <ul className="dropdown-menu">
                             <li><Link className="dropdown-item text-white" to="">Action</Link></li>
                             <li><Link className="dropdown-item text-white" to="">Another action</Link></li>
                             <li><Link className="dropdown-item text-white" to="">Something else here</Link></li>
