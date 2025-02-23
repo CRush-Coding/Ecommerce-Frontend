@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
 const colors = {
@@ -12,16 +12,19 @@ const stars = Array(5).fill(0);
 
 const rating = 4;
 
-const ProductCard = () => {
+const ProductCard = (props) => {
+    const {grid} = props;
+    let location = useLocation();
+    console.log(location);
   return (
     <>
-        <div className="col-3">
+        <div className={`${location.pathname === "/store" ? `gr-${grid}` : "col-3"}`}>
             <div className="product-card position-relative">
                 <div className="wishlist-icon position-absolute">
                     <Link><img src='images/images/wish.svg' alt='wishlist'/></Link>
                 </div>
                 <div className="product-image">
-                    <img src='images/images/watch.jpg' alt='product image'/>
+                    <img src='images/images/watch.jpg' alt='product image' className='img-fluid'/>
                 </div>
                 <div className="product-details">
                     <h6 className="brand">Havels</h6>
