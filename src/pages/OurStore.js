@@ -275,7 +275,7 @@ const OurStore = () => {
                             </div>
                         </div>
                         <div className="products-list pb-5">
-                            <div className='d-flex gap-10 flex-wrap justify-content-center'>
+                            <div className='d-flex gap-10 flex-wrap'>
                                 <ProductCard grid={grid}/>
                                 <ProductCard grid={grid}/>
                             </div>

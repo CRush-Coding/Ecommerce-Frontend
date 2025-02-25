@@ -47,6 +47,13 @@ const ProductCard = (props) => {
                         )}
                     <p>({rating} Stars)</p>
                     </div>
+                    <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Cupiditate, dolores doloremque! Odit, 
+                        obcaecati dolores hic adipisci repellat nisi quaerat reiciendis in 
+                        voluptatibus, 
+                        culpa temporibus sit aspernatur aliquid amet iure expedita!
+                    </p>
                     <p className="price">$100.00</p>
                 </div>
                 <div className="action-bar position-absolute">
