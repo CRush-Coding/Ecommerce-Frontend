@@ -24,7 +24,7 @@ const ProductCard = (props) => {
                     <Link><img src='images/images/wish.svg' alt='wishlist'/></Link>
                 </div>
                 <div className="product-image">
-                    <img src='images/images/watch.jpg' alt='product image' className='img-fluid'/>
+                    <img src='images/images/watch.jpg' alt='product' className='img-fluid'/>
                 </div>
                 <div className="product-details">
                     <h6 className="brand">Havels</h6>
