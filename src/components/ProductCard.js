@@ -15,7 +15,7 @@ const rating = 4;
 const ProductCard = (props) => {
     const {grid} = props;
     let location = useLocation();
-    console.log(location);
+    // console.log(location);
   return (
     <>
         <div className={`${location.pathname === "/store" ? `gr-${grid}` : "col-3"}`}>
