@@ -13,6 +13,7 @@ import Login from './pages/Login';
 import ForgotPassword from './pages/ForgotPassword';
 import Signup from './pages/Signup';
 import Resetpassword from './pages/Resetpassword';
+import SingleBlog from './pages/SingleBlog';
 
 function App() {
   return <>
@@ -30,6 +31,7 @@ function App() {
           <Route path='forgot-password' element={<ForgotPassword />}/>
           <Route path='signup' element={<Signup />}/>
           <Route path='reset-password' element={<Resetpassword />}/>
+          <Route path='blog/:id' element={<SingleBlog />}/>
 
 
         </Route>
