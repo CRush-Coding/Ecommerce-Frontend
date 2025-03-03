@@ -6,7 +6,13 @@
 
 body{
   font-family: "Rubik", sans-serif;
+  min-height: 100%;
 }
+
+html{
+  height: 100%;
+}
+
 
 a {
   text-decoration: none;
@@ -137,6 +143,10 @@ footer .input-group-text{
   background-color: var(--color-131921);
   color: white;
   padding: 8px 17px;
+}
+
+.footer-bottom{
+  bottom: 0;
 }
 /* End Footer Section */
 
@@ -598,3 +608,59 @@ footer .input-group-text{
 
 
 /* End Wishlist Section */
+
+
+/* Auth Card */
+
+.auth-card{
+  padding: 20px;
+  background-color: white;
+  width: 500px;
+  margin: 58px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+.auth-card h3{
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--color-777777);
+}
+
+.auth-card .form-control{
+  height: 50px;
+  background-color: var(--color-f5f5f7);
+  color: var(--color-777777);
+  font-size: 14px;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.auth-card a{
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-1c1c1b);
+}
+
+.auth-card .signup{
+  background-color: var(--color-febd69);
+  color: var(--color-131921);
+}
+
+.auth-card .signup:hover{
+  background-color: var(--color-131921);
+  color: white;
+}
+
+.auth-card p{
+  font-size: 15px;
+  color: var(--color-777777);
+}
+
+/* .login-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+} */
+
+/* End Auth Card */
