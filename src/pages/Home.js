@@ -205,19 +205,6 @@ const Home = () => {
         </div>
       </div>
     </section>
-	{/* <section className='famous-wrapper py-5 home-wrapper-2'>
-		<div className="container-xxl">
-			<div className="row">
-				<div className="col-3">
-					<div className="famous-card bg-dark">
-						<h5>Big Screen</h5>
-						<h6>Smart Watch Series 7</h6>
-						<p>From $399 or $16.62/mo. for 24 mo.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> */}
     <section className='special-wrapper py-5 home-wrapper-2'>
 		<div className="container-xxl">
 			<div className="row">
@@ -233,7 +220,7 @@ const Home = () => {
 			</div>
 		</div>
     </section>
-	<section className="popular-wrapper py-5 home-wrapper-2">
+	  <section className="popular-wrapper py-5 home-wrapper-2">
       <div className="container-xxl">
         <div className="row">
 			<div className="col-12">

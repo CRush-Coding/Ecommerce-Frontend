@@ -228,7 +228,7 @@ const OurStore = () => {
                                         id=''
                                     >
                                         <option value='manual'>Featured Option</option>   
-                                        <option value='bets-selling' selected='selected'>Best Selling</option>   
+                                        <option value='best-selling' selected='selected'>Best Selling</option>   
                                         <option value='title-ascending'>Alphabetically, A-Z</option>   
                                         <option value='title-descending'>Alphabetically, Z-A</option>   
                                         <option value='price-ascending'>Price, Low to High</option>   
