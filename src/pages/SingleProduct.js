@@ -4,6 +4,9 @@ import Meta from '../components/Meta';
 import ProductCard from '../components/ProductCard';
 import ReactImageZoom from 'react-image-zoom';
 import ReactStars from 'react-rating-stars-component';
+import Color from '../components/Color';
+import { TbGitCompare } from 'react-icons/tb';
+import { AiOutlineHeart } from 'react-icons/ai';
 
 const SingleProduct = () => {
     const [orderedProduct, setOrderedProduct] = useState(true);
@@ -52,20 +55,69 @@ const SingleProduct = () => {
                             </div>
                             <div className="border-bottom py-3">
                                 <div className="d-flex gap-10 align-items-center my-2">
-                                    <h3 className='product-heading'>ABC: </h3> 
-                                    <p className='product-data'>GFD</p>
+                                    <h3 className='product-heading'>Type: </h3> 
+                                    <p className='product-data'>Watch</p>
                                 </div>
                                 <div className="d-flex gap-10 align-items-center my-2">
-                                    <h3 className='product-heading'>ABC: </h3> 
-                                    <p className='product-data'>GFD</p>
+                                    <h3 className='product-heading'>Brand: </h3> 
+                                    <p className='product-data'>Havels</p>
                                 </div>
                                 <div className="d-flex gap-10 align-items-center my-2">
-                                    <h3 className='product-heading'>ABC: </h3> 
-                                    <p className='product-data'>GFD</p>
+                                    <h3 className='product-heading'>Category: </h3> 
+                                    <p className='product-data'>Watch</p>
                                 </div>
                                 <div className="d-flex gap-10 align-items-center my-2">
-                                    <h3 className='product-heading'>ABC: </h3> 
-                                    <p className='product-data'>GFD</p>
+                                    <h3 className='product-heading'>Tags: </h3> 
+                                    <p className='product-data'>Watch Havels</p>
+                                </div>
+                                <div className="d-flex gap-10 align-items-center my-2">
+                                    <h3 className='product-heading'>Availability: </h3> 
+                                    <p className='product-data'>In Stock</p>
+                                </div>
+                                <div className="d-flex gap-10 flex-column my-2">
+                                    <h3 className='product-heading'>Size : </h3> 
+                                    <div className='d-flex flex-wrap gap-15'>
+                                        <span className="badge border border-1 bg-white text-dark border-secondary">S</span>
+                                        <span className="badge border border-1 bg-white text-dark border-secondary">M</span>
+                                        <span className="badge border border-1 bg-white text-dark border-secondary">L</span>
+                                        <span className="badge border border-1 bg-white text-dark border-secondary">XL</span>
+                                    </div>
+                                </div>
+                                <div className="d-flex gap-10 flex-column mt-2 mb-3">
+                                    <h3 className='product-heading'>Color : </h3> 
+                                    <Color />
+                                </div>
+                                <div className="d-flex gap-10 flex-row my-2 align-items-center gap-15 mb-3">
+                                    <h3 className='product-heading'>Quantity : </h3> 
+                                    <div className="">
+                                        <input 
+                                            type="number" 
+                                            name="" 
+                                            min={1}
+                                            max={16}
+                                            className='form-control'
+                                            style={{width: "70px"}} 
+                                            id="" />
+                                    </div>
+                                    <div className='d-flex justify-content-center align-items-center gap-30 ms-5'>
+                                        <button className='button border-0' type='submit'>Add To Cart</button>
+                                        <button className='button signup'>Buy It Now</button>
+                                    </div>
+                                </div>
+                                <div className="d-flex align-items-center gap-15 mb-3">
+                                    <div>
+                                        <a href=""> <TbGitCompare className='fs-5 me-2'/> Add To Compare</a>
+                                    </div>
+                                    <div>
+                                        <a href=""><AiOutlineHeart className='fs-5 me-2'/>  Add To Wishlist</a>
+                                    </div>
+                                </div>
+                                <div className="d-flex gap-10 align-items-center my-2">
+                                    <h3 className='product-heading'>Shipping & Returns: </h3> 
+                                    <p className='product-data'>Free shipping and returns available 
+                                        on all orders! We ship to all US domestic orders within
+                                        <b>5-10 business days!</b>
+                                    </p>
                                 </div>
                             </div>
                         </div>
