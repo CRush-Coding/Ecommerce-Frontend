@@ -4,6 +4,7 @@ import Meta from '../components/Meta';
 import BlogCard from '../components/BlogCard';
 import { Link } from 'react-router-dom';
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
+import blog from "../images/blog-1.jpg"
 
 const SingleBlog = () => {
   return (
@@ -21,7 +22,7 @@ const SingleBlog = () => {
                             <h3 className="title">
                                 A Beautiful Sunday Morning Renaissance
                             </h3>
-                            <img src="images/images/blog-1.jpg" className='img-fluid w-100 my-4' alt="blog" />
+                            <img src={blog} className='img-fluid w-100 my-4' alt="blog" />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Corrupti asperiores quae dolore aspernatur numquam totam expedita vel 
                                 similique, iste tempora

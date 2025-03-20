@@ -19,6 +19,8 @@ import RefundPolicy from './pages/RefundPolicy';
 import ShippingPolicy from './pages/ShippingPolicy';
 import TermAndConditions from './pages/TermAndConditions';
 import SingleProduct from './pages/SingleProduct';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
           <Route path='signup' element={<Signup />}/>
           <Route path='reset-password' element={<Resetpassword />}/>
           <Route path='blog/:id' element={<SingleBlog />}/>
+          <Route path='cart' element={<Cart />}/>
+          <Route path='checkout' element={<Checkout />}/>
           <Route path='privacy-policy' element={<PrivacyPolicy />}/>
           <Route path='refund-policy' element={<RefundPolicy />}/>
           <Route path='shipping-policy' element={<ShippingPolicy />}/>

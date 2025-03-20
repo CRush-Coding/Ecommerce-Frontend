@@ -1,6 +1,12 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
+import prodcompare from "../images/prodcompare.svg";
+import wish from "../images/wish.svg";
+import wishlist from "../images/wishlist.svg";
+import watch from "../images/watch.jpg";
+import addcart from "../images/add-cart.svg";
+import view from "../images/view.svg";
 
 
 const colors = {
@@ -21,10 +27,10 @@ const ProductCard = (props) => {
         <div className={`${location.pathname === "/store" ? `gr-${grid}` : "col-3"}`}>
             <Link to='/product/:id' className="product-card position-relative">
                 <div className="wishlist-icon position-absolute">
-                    <Link><img src='images/images/wish.svg' alt='wishlist'/></Link>
+                    <Link><img src={wish} alt='wishlist'/></Link>
                 </div>
                 <div className="product-image">
-                    <img src='images/images/watch.jpg' alt='product' className='img-fluid'/>
+                    <img src={watch} alt='product' className='img-fluid'/>
                 </div>
                 <div className="product-details">
                     <h6 className="brand">Havels</h6>
@@ -58,11 +64,11 @@ const ProductCard = (props) => {
                 </div>
                 <div className="action-bar position-absolute">
                     <div className='d-flex flex-column gap-15'>
-                        <Link><img src='images/images/prodcompare.svg' alt='compare'/></Link>
+                        <Link><img src={prodcompare} alt='compare'/></Link>
 
-                        <Link><img src='images/images/view.svg' alt='view'/></Link>
+                        <Link><img src={view} alt='view'/></Link>
 
-                        <Link><img src='images/images/add-cart.svg' alt='addcart'/></Link>
+                        <Link><img src={addcart} alt='addcart'/></Link>
 
                     </div>
                 </div>
